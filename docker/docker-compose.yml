@@ -1,0 +1,17 @@
+version: '2.3'
+
+services:
+
+  neuralstyle:
+    image: neuralstyle
+    container_name: neuralstyle
+    working_dir: /neuralstyle
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    environment:
+      - PYTHONPATH=/neuralstyle
+    volumes:
+      - ../:/neuralstyle
+    runtime: nvidia
+    command: tail /dev/null -f

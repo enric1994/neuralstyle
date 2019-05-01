@@ -1,0 +1,10 @@
+## Uncomment the Linux packages you want to install
+
+nano
+wget
+libsm6
+libxext6
+libxrender-dev
+python-tk
+
+
