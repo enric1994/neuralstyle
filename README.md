@@ -3,6 +3,7 @@ Dockerized version of https://github.com/cysmith/neural-style-tf
 
 # Usage
 Having Docker, Docker Compose, NVIDIA-Docker and a NVIDIA GPU run:
+
 `docker-compose -f docker/docker-compose.yml run neuralstyle bash`
 
 Then, use the neural_style.py script on images/videos:
