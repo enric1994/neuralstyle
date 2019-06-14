@@ -1,4 +1,7 @@
-During the first month of my PhD I worked on the style transfer technique applied to videos. The objective is transform the news into a "cartoonized" video for kids by transferring the style of a cartoon.
+During the first month of my PhD I worked on the style transfer technique applied to videos. The objective is transform the news into a "cartoonized" video for kids by transferring the style of a cartoon. 
+
+I encapsulated the code of [cysmith](https://github.com/cysmith/neural-style-tf) in a GPU-ready image with all the dependencies, including the download of the VGG-19 pretrained weights.
+
 
 The style transfer process requires 2 photos:
 
@@ -9,7 +12,7 @@ The following video transfer the style from the "The Powerpuff Girls" to the wea
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uSIRT_fGo9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-# Usage
+## Usage
 Having Docker, Docker Compose, NVIDIA-Docker and a NVIDIA GPU run:
 
 `docker-compose -f docker/docker-compose.yml run neuralstyle bash`
@@ -24,5 +27,5 @@ python neural_style.py --content_img golden_gate.jpg \
                        --verbose;
 ``` 
 
-
+## References
 This repository is a Dockerized version of https://github.com/cysmith/neural-style-tf
